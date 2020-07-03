@@ -1,1 +1,31 @@
-# coupon_service
+# couponService
+
+API Challenge Coupon
+
+Desarollada en NODEJS y desplegada en AWS-Lambda
+
+##Parametros
+Para desplegar se requiere configurar los siguientes parametros
+
+**URL_GET_PRICE**	URL para obtener el precio de los articulos, debe retornar un objeto JSON con minimo los siguientes atributos
+
+``` js
+  {
+	  'id': 'MLA599260060',
+	  'price': 130
+	  ...
+  }
+```
+
+
+**REDISHOST**	URL de cache en AWS ElastiCache - REDIS
+**REDISPORT**	Puerto de cache en AWS ElastiCache - REDIS
+
+En ella almacenamos la respuesta obtenida del servicio de precios, así disminuir la cantidad de consultas realizadas al servicio y reducir el tiempo de respuesta.
+En ElastiCache - REDIS almacenamos un objeto **llave-valor** con la siguiente estructura
+**llave** "MLA599260060"
+**valor** "{'id': 'MLA599260060','price': 130...}"
+
+
+
+
