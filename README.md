@@ -4,7 +4,7 @@ API Challenge Coupon
 
 Desarollada en NODEJS y desplegada en AWS-Lambda
 
-##Parametros
+## Parametros
 Para desplegar se requiere configurar los siguientes parametros
 
 **URL_GET_PRICE**	URL para obtener el precio de los articulos, debe retornar un objeto JSON con minimo los siguientes atributos
