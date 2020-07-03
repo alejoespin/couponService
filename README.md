@@ -27,7 +27,7 @@ En ElastiCache - REDIS almacenamos un objeto **llave-valor** con la siguiente es
 
 
 ## Pruebas del servicio
-Para realizar las pruebas del servicio realizar una petición **POST** a la siguiente **[`URL`]** (https://7fu651tpac.execute-api.us-west-2.amazonaws.com/beta/meli-coupon)
+Para realizar las pruebas del servicio realizar una petición **POST** a la siguiente **[URL]** (https://7fu651tpac.execute-api.us-west-2.amazonaws.com/beta/meli-coupon)
 con el siguiente request
 
 ``` js
