@@ -41,3 +41,20 @@ con el siguiente request
 }
 ```
 En el se envia un listado de códigos de artículos y un atributo con el monto disponible
+
+## Cobertura
+
+Las pruebas unitarias se realizaron con JEST.
+El resultado de las pruebas unitarias es el siguiente
+
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------------|---------|----------|---------|---------|-------------------
+All files               |   98.51 |     87.5 |      90 |   98.44 |                   
+ src                    |     100 |     87.5 |     100 |     100 |                   
+  index.js              |     100 |     87.5 |     100 |     100 | 63                
+ src/redis-operations   |   93.75 |      100 |   66.67 |   93.75 |                   
+  redis-operations.js   |   93.75 |      100 |   66.67 |   93.75 | 4                 
+ src/request-operations |     100 |      100 |     100 |     100 |                   
+  request-operations.js |     100 |      100 |     100 |     100 |                   
+  
+  El proyecto esta configurado para enviar el reporte de las pruebas unitarias a SONARAQUBE
