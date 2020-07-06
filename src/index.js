@@ -17,7 +17,6 @@ exports.handler = async (event) => {
   
   for (var i = 0; i < event.item_ids.length; i++) {
       itemPrice = await getPrice(event.item_ids[i], redisConnect);
-      console.log(`itemPrice ${JSON.stringify(itemPrice)}`);
       items.push({
         id: event.item_ids[i],
         price: itemPrice
@@ -30,10 +29,7 @@ exports.handler = async (event) => {
       body: "NOT_FOUND"
     }
   }
-  console.log(`items ${JSON.stringify(items)}`);
   const itemFilter = await calculate(items, event.amount);
-  console.log(`itemFilter ${JSON.stringify(itemFilter)}`);
-  console.log(`total ${JSON.stringify(total)}`);
   return {
       statusCode: 200,
       body: JSON.stringify({
@@ -68,6 +64,5 @@ async function calculate (itemsOrder, amount) {
     }
     i++;
   }
-  console.log("itemsResult ", itemsResult);
   return itemsResult;
 }

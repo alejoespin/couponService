@@ -5,9 +5,7 @@ const requestObject = async (itemId) => {
     uri: `${process.env.GET_PRICE}/${itemId}`,
     json: true
   };
-  console.log("dataRequest ", dataRequest);
   return await rp.get(dataRequest).then(function(response) {
-    console.log("PRICE ", response);
     return response;
   });
 };
