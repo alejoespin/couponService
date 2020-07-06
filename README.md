@@ -57,4 +57,4 @@ All files               |   98.51 |     87.5 |      90 |   98.44 |
  src/request-operations |     100 |      100 |     100 |     100 |                   
   request-operations.js |     100 |      100 |     100 |     100 |                   
   
-  El proyecto esta configurado para enviar el reporte de las pruebas unitarias a SONARAQUBE
+  El proyecto esta configurado para enviar el reporte de las pruebas unitarias a SONARQUBE
